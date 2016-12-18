@@ -33,15 +33,15 @@
         </layout>
     </appender>
 
-    <appender name="SPRING" class="org.apache.log4j.RollingFileAppender">
+    <appender name="RESULT_FILE" class="org.apache.log4j.RollingFileAppender">
         <param name="Threshold" value="DEBUG"/>
-        <param name="File" value="log/spring_debug.log"/>
+        <param name="File" value="log/results.log"/>
         <param name="Append" value="false"/>
         <param name="MaxFileSize" value="100000KB"/>
         <param name="MaxBackupIndex" value="10"/>
 
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%d %-5p [%c] %m%n"/>
+            <param name="ConversionPattern" value="%d %-5p %m%n"/>
         </layout>
     </appender>
 
@@ -64,6 +64,12 @@
 
     <category name="cinderella">
         <priority value="DEBUG"/>
+    </category>
+
+    <category name="link.visitor">
+        <priority value="DEBUG"/>
+
+        <appender-ref ref="RESULT_FILE"/>
     </category>
 
     <root>
