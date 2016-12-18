@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -23,6 +25,7 @@ public class MedParser {
 
     private static int personsProcessed = 0;
     private static int matchedNamesAmount = 0;
+    private static Map<String, NameAmountPair> names = new HashMap<>();
 
 
     public static void parse() throws IOException {
@@ -39,6 +42,12 @@ public class MedParser {
         }
 
         resultLogger.info("Processed {} / Matched {} in {}(sec)", personsProcessed, matchedNamesAmount, (System.currentTimeMillis() - startTime) / 1000);
+
+        List<NameAmountPair> nameAmountPairs = new ArrayList<>(names.values());
+        nameAmountPairs.sort((o1, o2) -> o2.amount - o1.amount);
+
+        String statMessage = nameAmountPairs.subList(0, 5).stream().map(pair -> pair.name + "(" + pair.amount + ")").collect(Collectors.joining(", "));
+        resultLogger.info("Top 5 names(from {}) are: {}", nameAmountPairs.size(), statMessage);
     }
 
     private static List<String> extractLinksFromGroupPage() throws IOException {
@@ -78,11 +87,28 @@ public class MedParser {
         personsProcessed += rowsAmount;
     }
 
+    private static class NameAmountPair {
+        public NameAmountPair(String name) {
+            this.name = name;
+        }
+
+        public String name;
+        public int amount = 0;
+    }
+
 
     private static final Predicate<Element> CINDERELLA_NAME_MATCHER = personElem -> {
         String personFullName = personElem.text();
 
         String name = personFullName.split(" ")[1];
+
+        NameAmountPair nameAmountPair = names.get(name);
+        if (nameAmountPair == null) {
+            nameAmountPair = new NameAmountPair(name);
+            names.put(name, nameAmountPair);
+        }
+        nameAmountPair.amount++;
+
         return name.equals("Александра");
     };
 }
