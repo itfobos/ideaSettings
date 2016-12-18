@@ -21,6 +21,26 @@ public class MedParser {
 
     private static final String MED_BASE_URL = "http://www.ngmu.ru";
 
+    private static int personsProcessed = 0;
+    private static int matchedNamesAmount = 0;
+
+
+    public static void parse() throws IOException {
+        List<String> links = extractLinksFromGroupPage();
+
+        long startTime = System.currentTimeMillis();
+        int linksAmount = links.size();
+        for (int i = 0; i < linksAmount; i++) {
+            visitLink(links.get(i));
+
+            if (i % 3 == 0) {
+                logger.info("{} links of {} is processed", i, linksAmount);
+            }
+        }
+
+        resultLogger.info("Processed {} / Matched {} in {}(sec)", personsProcessed, matchedNamesAmount, (System.currentTimeMillis() - startTime) / 1000);
+    }
+
     private static List<String> extractLinksFromGroupPage() throws IOException {
         Document groupsDomDocument = Jsoup.connect(MED_BASE_URL + "/groups/").userAgent("Chrome").timeout(5000).get();
 
@@ -49,21 +69,20 @@ public class MedParser {
             logger.warn("Link {} amount of links is {} and amount of rows {}", relativeLink, rowsAmount, linkToPersonElements.size());
         }
 
-        Predicate<Element> cinderellaNameMatcher = personElem -> {
-            String personFullName = personElem.text();
-
-            String name = personFullName.split(" ")[1];
-            return name.equals("Александра");
-        };
-
-        linkToPersonElements.stream().filter(cinderellaNameMatcher).forEach(element -> {
+        linkToPersonElements.stream().filter(CINDERELLA_NAME_MATCHER).forEach(element -> {
             resultLogger.info("{} {}{}", element.text(), MED_BASE_URL, element.attr("href"));
+
+            matchedNamesAmount++;
         });
+
+        personsProcessed += rowsAmount;
     }
 
-    public static void parse() throws IOException {
-        List<String> links = extractLinksFromGroupPage();
 
-        links.stream().forEach(MedParser::visitLink);
-    }
+    private static final Predicate<Element> CINDERELLA_NAME_MATCHER = personElem -> {
+        String personFullName = personElem.text();
+
+        String name = personFullName.split(" ")[1];
+        return name.equals("Александра");
+    };
 }
