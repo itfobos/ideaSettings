@@ -13,7 +13,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         initLog4j();
 
-        MedParser.parseGroupsPage();
+        MedParser.parse();
 
         System.out.println("OK");
     }
