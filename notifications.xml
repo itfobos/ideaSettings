@@ -1,0 +1,6 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Platform and Plugin Updates" displayType="NONE" />
+    <notification groupId="ScalaPluginUpdate" displayType="NONE" />
+  </component>
+</application>

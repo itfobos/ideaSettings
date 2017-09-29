@@ -1,0 +1,23 @@
+<application>
+  <component name="ApplicationTasksOptions">
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="-w $FileDir$" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="go" />
+      <option name="immediateSync" value="false" />
+      <option name="name" value="Go watcher" />
+      <option name="output" value="" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="$USER_HOME$/go/bin/goimports" />
+      <option name="scopeName" value="app&amp;att" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="" />
+      <envs />
+    </TaskOptions>
+  </component>
+</application>
