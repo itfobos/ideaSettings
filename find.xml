@@ -17,6 +17,7 @@
       <mask>*.html</mask>
       <mask>*.java</mask>
       <mask>*.js</mask>
+      <mask>*.json</mask>
     </recentFileMasks>
   </component>
 </application>
