@@ -20,22 +20,22 @@
       <mask>*.jsx</mask>
       <mask>*.ts</mask>
       <mask>*.t</mask>
-      <mask>*.l</mask>
       <mask>*.lo</mask>
-      <mask>*.loca</mask>
-      <mask>*.local</mask>
-      <mask>*.locale</mask>
       <mask>*.scs</mask>
       <mask>*.</mask>
       <mask>*.s</mask>
       <mask>*.sc</mask>
       <mask>*.scss</mask>
-      <mask>*.j</mask>
       <mask>*.jaca</mask>
       <mask>*.jac</mask>
       <mask>*.ja</mask>
       <mask>*.jav</mask>
       <mask>*.java</mask>
+      <mask>*.l</mask>
+      <mask>*.loca</mask>
+      <mask>*.local</mask>
+      <mask>*.locale</mask>
+      <mask>*.j</mask>
       <mask>*.js</mask>
     </recentFileMasks>
   </component>
