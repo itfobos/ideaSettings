@@ -7,27 +7,20 @@
     <option name="SKIP_RESULTS_WHEN_ONE_USAGE" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
+    <option name="FILE_MASK" value="*-test.js" />
     <recentFileMasks>
       <mask>*.loca</mask>
       <mask>*.local</mask>
       <mask>*.locale</mask>
-      <mask>*.j</mask>
       <mask>*.jso</mask>
       <mask>*.json</mask>
       <mask>*.scss</mask>
       <mask>*.scs</mask>
       <mask>*.sc</mask>
       <mask>*.s</mask>
-      <mask>*</mask>
-      <mask>*-</mask>
-      <mask>*-t</mask>
-      <mask>*-te</mask>
-      <mask>*-tes</mask>
       <mask>*-test*</mask>
-      <mask>*-test</mask>
       <mask>*-test.</mask>
       <mask>*-test.j</mask>
-      <mask>*-test.js</mask>
       <mask>*.*</mask>
       <mask>**</mask>
       <mask>*u*</mask>
@@ -36,8 +29,16 @@
       <mask>*uti*</mask>
       <mask>*util*</mask>
       <mask>*utils*</mask>
-      <mask>*.</mask>
       <mask>*.js</mask>
+      <mask>*.j</mask>
+      <mask>*.</mask>
+      <mask>*</mask>
+      <mask>*-</mask>
+      <mask>*-t</mask>
+      <mask>*-te</mask>
+      <mask>*-tes</mask>
+      <mask>*-test</mask>
+      <mask>*-test.js</mask>
     </recentFileMasks>
   </component>
 </application>
