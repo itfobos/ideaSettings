@@ -7,7 +7,7 @@
     <option name="SKIP_RESULTS_WHEN_ONE_USAGE" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
-    <option name="FILE_MASK" value="*.scss" />
+    <option name="FILE_MASK" value="*.json" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.jsp</mask>
@@ -16,7 +16,6 @@
       <mask>*.css</mask>
       <mask>*.mxml</mask>
       <mask>*.html</mask>
-      <mask>*.json</mask>
       <mask>*.jsx</mask>
       <mask>*.ts</mask>
       <mask>*.t</mask>
@@ -30,13 +29,15 @@
       <mask>*.loca</mask>
       <mask>*.local</mask>
       <mask>*.locale</mask>
-      <mask>*.js</mask>
-      <mask>*.j</mask>
       <mask>*.</mask>
       <mask>*.s</mask>
       <mask>*.sc</mask>
       <mask>*.scs</mask>
       <mask>*.scss</mask>
+      <mask>*.j</mask>
+      <mask>*.js</mask>
+      <mask>*.jso</mask>
+      <mask>*.json</mask>
     </recentFileMasks>
   </component>
 </application>
