@@ -9,7 +9,7 @@
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
-    <option name="FILE_MASK" value="*-test.js" />
+    <option name="FILE_MASK" value="*.js" />
     <recentFileMasks>
       <mask>*.t</mask>
       <mask>*.lo</mask>
@@ -23,7 +23,6 @@
       <mask>*.local</mask>
       <mask>*.locale</mask>
       <mask>*.j</mask>
-      <mask>*.js</mask>
       <mask>*.jso</mask>
       <mask>*.json</mask>
       <mask>*.scss</mask>
@@ -41,6 +40,7 @@
       <mask>*-test.</mask>
       <mask>*-test.j</mask>
       <mask>*-test.js</mask>
+      <mask>*.js</mask>
     </recentFileMasks>
   </component>
 </application>
