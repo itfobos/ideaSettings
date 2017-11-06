@@ -2,23 +2,12 @@
   <component name="FindSettings">
     <option name="customScope" value="Project Files" />
     <option name="defaultScopeName" value="Project Files" />
-    <option name="regularExpressions" value="true" />
     <option name="showResultsInSeparateView" value="true" />
     <option name="skipResultsWithOneUsage" value="true" />
     <option name="SKIP_RESULTS_WHEN_ONE_USAGE" value="true" />
-    <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
-    <option name="FILE_MASK" value="*.js" />
     <recentFileMasks>
-      <mask>*.t</mask>
-      <mask>*.lo</mask>
-      <mask>*.jaca</mask>
-      <mask>*.jac</mask>
-      <mask>*.ja</mask>
-      <mask>*.jav</mask>
-      <mask>*.java</mask>
-      <mask>*.l</mask>
       <mask>*.loca</mask>
       <mask>*.local</mask>
       <mask>*.locale</mask>
@@ -29,7 +18,6 @@
       <mask>*.scs</mask>
       <mask>*.sc</mask>
       <mask>*.s</mask>
-      <mask>*.</mask>
       <mask>*</mask>
       <mask>*-</mask>
       <mask>*-t</mask>
@@ -40,6 +28,15 @@
       <mask>*-test.</mask>
       <mask>*-test.j</mask>
       <mask>*-test.js</mask>
+      <mask>*.*</mask>
+      <mask>**</mask>
+      <mask>*u*</mask>
+      <mask>*ut*</mask>
+      <mask>*utin*</mask>
+      <mask>*uti*</mask>
+      <mask>*util*</mask>
+      <mask>*utils*</mask>
+      <mask>*.</mask>
       <mask>*.js</mask>
     </recentFileMasks>
   </component>
