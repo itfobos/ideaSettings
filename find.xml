@@ -7,7 +7,7 @@
     <option name="SKIP_RESULTS_WHEN_ONE_USAGE" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
-    <option name="FILE_MASK" value="*.js" />
+    <option name="FILE_MASK" value="*.go" />
     <recentFileMasks>
       <mask>*.locale</mask>
       <mask>*.jso</mask>
@@ -34,11 +34,11 @@
       <mask>*-tes</mask>
       <mask>*-test</mask>
       <mask>*-test.js</mask>
-      <mask>*.go</mask>
-      <mask>*.g</mask>
-      <mask>*.</mask>
-      <mask>*.j</mask>
       <mask>*.js</mask>
+      <mask>*.j</mask>
+      <mask>*.</mask>
+      <mask>*.g</mask>
+      <mask>*.go</mask>
     </recentFileMasks>
   </component>
 </application>
