@@ -9,12 +9,6 @@
     <option name="SEARCH_SCOPE" value="Project Production Files" />
     <option name="FILE_MASK" value="*.js" />
     <recentFileMasks>
-      <mask>*.locale</mask>
-      <mask>*.jso</mask>
-      <mask>*.json</mask>
-      <mask>*-test*</mask>
-      <mask>*-test.</mask>
-      <mask>*-test.j</mask>
       <mask>*.*</mask>
       <mask>**</mask>
       <mask>*u*</mask>
@@ -38,6 +32,12 @@
       <mask>*.scs</mask>
       <mask>*.scss</mask>
       <mask>*.j</mask>
+      <mask>**.js</mask>
+      <mask>*re*.js</mask>
+      <mask>*red*.js</mask>
+      <mask>*reduc*.js</mask>
+      <mask>*reduce*.js</mask>
+      <mask>*reducer*.js</mask>
       <mask>*.js</mask>
     </recentFileMasks>
   </component>
