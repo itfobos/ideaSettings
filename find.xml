@@ -7,7 +7,7 @@
     <option name="SKIP_RESULTS_WHEN_ONE_USAGE" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Production Files" />
-    <option name="FILE_MASK" value="*.scss" />
+    <option name="FILE_MASK" value="*.js" />
     <recentFileMasks>
       <mask>*.locale</mask>
       <mask>*.jso</mask>
@@ -23,8 +23,6 @@
       <mask>*uti*</mask>
       <mask>*util*</mask>
       <mask>*utils*</mask>
-      <mask>*.js</mask>
-      <mask>*.j</mask>
       <mask>*.go</mask>
       <mask>*.g</mask>
       <mask>*</mask>
@@ -39,6 +37,8 @@
       <mask>*.sc</mask>
       <mask>*.scs</mask>
       <mask>*.scss</mask>
+      <mask>*.j</mask>
+      <mask>*.js</mask>
     </recentFileMasks>
   </component>
 </application>
